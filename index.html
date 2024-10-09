@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<HTML>
-  <head>
-    <title>Bienvenodos</title>
-  </head>
-  <body>
-    <div id="una capa">
-      <h1>Hola!</h1>
-      <p>BIENVENIDOS A TODOS.</p>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenidos a mi Página Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            color: #fff;
+            background: -webkit-linear-gradient(45deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        /* Animación del título */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Efecto de resplandor alrededor del texto */
+        .glow {
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff6e7f, 0 0 30px #ff6e7f, 0 0 40px #ff6e7f, 0 0 50px #ff6e7f, 0 0 60px #ff6e7f, 0 0 70px #ff6e7f;
+        }
+
+        /* Botón de bienvenida */
+        .button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #fff;
+            color: #ff7e5f;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #ff7e5f;
+            color: #fff;
+            box-shadow: 0 0 10px #ff6e7f, 0 0 20px #feb47b;
+        }
+
+        /* Estilos responsivos para móviles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: 0.2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">Bienvenidos a mi Página Web</h1>
+        <p>Explora y disfruta del contenido que tengo para ofrecerte.</p>
+        <button class="button">¡Vamos a empezar!</button>
     </div>
-  </body>
-</HTML>
+</body>
+</html>
